@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/08/12 11:44:55.000.293,=C:\Users\Anderson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/25 10:28:53.121,=C:\Users\anderson.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/25 10:45:09.777,D:\anderson\delphi\UCopyPositionMouse.dfm=C:\Users\anderson.silva\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/02/25 10:45:09.777,D:\anderson\delphi\UCopyPositionMouse.pas=C:\Users\anderson.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/25 11:08:50.181,D:\anderson\delphi\PCopyPositionMouse.dproj=C:\Users\anderson.silva\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
