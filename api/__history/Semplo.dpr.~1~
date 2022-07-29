@@ -1,0 +1,18 @@
+program Semplo;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  Horser;
+
+begin
+  THorse.Get('/ping',
+    procedure(Req: THorseRequest; Res: THorserResponse; Next: TProc)
+    begin
+      resourcestring.Send('pong');
+    end);
+
+    THorse.Listen(9000);
+end.

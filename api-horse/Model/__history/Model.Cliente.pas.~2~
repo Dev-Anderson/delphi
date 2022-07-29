@@ -1,0 +1,74 @@
+unit Model.Cliente;
+
+interface
+
+uses FireDAC.Comp.Client, Data.DB, System.SysUtils, Model.Connection;
+
+type
+  TCliente = class
+  private
+    FID_CLIENTE: Integer;
+    FNOME: string;
+    FEMAIL: string;
+    FFONE: string;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    property ID_CLIENTE :Integer read FID_CLIENTE write FID_CLIENTE;
+    property NOME : string read FNOME write FNOME;
+    property EMAIL : string read FEMAIL write FEMAIL;
+    property FONE : string read FFONE write FFONE;
+
+    function ListarCliente(order_by: string; out erro: string): TFDQuery;
+    function Inserir(out erro: string): Boolean;
+    function Excluir(out erro: string): Boolean;
+    function Editar(out erro: string): Boolean;
+  end;
+
+implementation
+
+{TCliente}
+
+constructor TCliente.Create;
+begin
+  Model.Connection.Connect;
+end;
+
+destructor TCliente.Destroy;
+begin
+  Model.Connection.Disconect;
+end;
+
+function TCliente.Excluir(out erro: string): Boolean;
+var
+  qry : TFDQuery;
+begin
+
+  try
+    qry := TFDQuery.Create(nil);
+    qry.Connection := Model.Connection.FConnection;
+
+    with qry do
+    begin
+      Active := false;
+      sql.Clear;
+      SQL.Add('DELETE FROM CLIENTE WHERE ID = :ID_CLIENTE');
+      ParamByName('ID').Value := ID_CLIENTE;
+      ExecSQL;
+    end;
+
+    qry.Free;
+    erro := '';
+    Result := true;
+
+    except on ex:Exception do
+      begin
+        erro := 'Erro ao excluir cliente: ' + ex.Message;
+        Result := false;
+      end;
+  end;
+end;
+
+
+
+end.

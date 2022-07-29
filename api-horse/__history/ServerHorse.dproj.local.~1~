@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/21 15:37:11.000.072,=C:\Users\anderson.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 08:29:28.280,C:\Anderson\delphi\api-horse\ServerHorse.dproj=C:\Users\anderson.silva\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/07/28 08:46:43.949,=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 08:47:20.883,C:\Anderson\delphi\api-horse\Controller\Controller.Cliente.pas=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 09:00:33.572,=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 09:00:58.154,=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 09:06:22.834,C:\Anderson\delphi\api-horse\Model\Model.Connection.pas=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 09:20:33.744,=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+    <Transaction>2022/07/28 09:20:53.557,C:\Anderson\delphi\api-horse\Model\Model.Cliente.pas=C:\Anderson\delphi\api-horse\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
